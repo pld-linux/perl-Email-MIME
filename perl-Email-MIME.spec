@@ -33,7 +33,7 @@ message. Headers are decoded from MIME encoding.
 
 %description -l pl
 Jest to rozszerzenie modu³u Email::Simple s³u¿±ce do obs³ugi
-wiadomo¶ci w formacie MIME. Pobiera on wiadomo¶æ jako ³añcuch
+wiadomo¶ci w formacie MIME. Pobiera ono wiadomo¶æ jako ³añcuch
 tekstowy, dzieli go na czê¶ci sk³adowe i umo¿liwia dostêp do
 poszczególnych czê¶ci wiadomo¶ci. Nag³ówki równie¿ s± dekodowane.
 
