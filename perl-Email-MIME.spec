@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Email
 %define	pnam	MIME
-Summary:	Email::MIME - Easy MIME message parsing.
-#Summary(pl):	
+Summary:	Email::MIME - easy MIME message parsing
+Summary(pl):	Email::MIME - ³atwe analizowanie wiadomo¶ci w formacie MIME
 Name:		perl-Email-MIME
 Version:	1.82
 Release:	1
@@ -26,13 +26,16 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is an extension of the L<Email::Simple> module, to handle MIME
-encoded messages. It takes a message as a string, splits it up into its
-constituent parts, and allows you access to various parts of the
+This is an extension of the Email::Simple module, to handle MIME
+encoded messages. It takes a message as a string, splits it up into
+its constituent parts, and allows you access to various parts of the
 message. Headers are decoded from MIME encoding.
 
-# %description -l pl
-# TODO
+%description -l pl
+Jest to rozszerzenie modu³u Email::Simple s³u¿±ce do obs³ugi
+wiadomo¶ci w formacie MIME. Pobiera on wiadomo¶æ jako ³añcuch
+tekstowy, dzieli go na czê¶ci sk³adowe i umo¿liwia dostêp do
+poszczególnych czê¶ci wiadomo¶ci. Nag³ówki równie¿ s± dekodowane.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
