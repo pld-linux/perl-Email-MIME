@@ -6,7 +6,7 @@
 %define	pdir	Email
 %define	pnam	MIME
 Summary:	Email::MIME - easy MIME message parsing
-Summary(pl):	Email::MIME - ³atwe analizowanie wiadomo¶ci w formacie MIME
+Summary(pl.UTF-8):   Email::MIME - Å‚atwe analizowanie wiadomoÅ›ci w formacie MIME
 Name:		perl-Email-MIME
 Version:	1.85
 Release:	1
@@ -34,11 +34,11 @@ encoded messages. It takes a message as a string, splits it up into
 its constituent parts, and allows you access to various parts of the
 message. Headers are decoded from MIME encoding.
 
-%description -l pl
-Jest to rozszerzenie modu³u Email::Simple s³u¿±ce do obs³ugi
-wiadomo¶ci w formacie MIME. Pobiera ono wiadomo¶æ jako ³añcuch
-tekstowy, dzieli go na czê¶ci sk³adowe i umo¿liwia dostêp do
-poszczególnych czê¶ci wiadomo¶ci. Nag³ówki równie¿ s± dekodowane.
+%description -l pl.UTF-8
+Jest to rozszerzenie moduÅ‚u Email::Simple sÅ‚uÅ¼Ä…ce do obsÅ‚ugi
+wiadomoÅ›ci w formacie MIME. Pobiera ono wiadomoÅ›Ä‡ jako Å‚aÅ„cuch
+tekstowy, dzieli go na czÄ™Å›ci skÅ‚adowe i umoÅ¼liwia dostÄ™p do
+poszczegÃ³lnych czÄ™Å›ci wiadomoÅ›ci. NagÅ‚Ã³wki rÃ³wnieÅ¼ sÄ… dekodowane.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
