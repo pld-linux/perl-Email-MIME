@@ -6,7 +6,7 @@
 %define	pdir	Email
 %define	pnam	MIME
 Summary:	Email::MIME - easy MIME message parsing
-Summary(pl.UTF-8):   Email::MIME - łatwe analizowanie wiadomości w formacie MIME
+Summary(pl.UTF-8):	Email::MIME - łatwe analizowanie wiadomości w formacie MIME
 Name:		perl-Email-MIME
 Version:	1.85
 Release:	1
