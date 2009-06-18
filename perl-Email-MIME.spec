@@ -8,24 +8,22 @@
 Summary:	Email::MIME - easy MIME message parsing
 Summary(pl.UTF-8):	Email::MIME - łatwe analizowanie wiadomości w formacie MIME
 Name:		perl-Email-MIME
-Version:	1.861
+Version:	1.863
 Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Email/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	fd0b77ea88e5b30c159306d0c6aeab1b
+# Source0-md5:	339b0a09fab042c1f9a6292a220b333d
 URL:		http://search.cpan.org/dist/Email-MIME/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Email-MIME-ContentType >= 1
+BuildRequires:	perl-Email-MIME-ContentType >= 1.011
 BuildRequires:	perl-Email-MIME-Encodings >= 1.3
-BuildRequires:	perl-Email-Simple >= 1:2.003
+BuildRequires:	perl-Email-Simple >= 1:2.004
 BuildRequires:	perl-MIME-Types >= 1.13
-BuildRequires:	perl-Test-Pod-Coverage >= 1.08
 %endif
-# not autodetected
-Requires:	perl-Email-Simple >= 1:1.91
+Requires:	perl-Email-Simple >= 1:2.004
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -62,6 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes
+%doc Changes README
 %{perl_vendorlib}/Email/*.pm
+%{perl_vendorlib}/Email/MIME/Header.pm
 %{_mandir}/man3/*
