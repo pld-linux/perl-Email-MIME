@@ -23,6 +23,8 @@ BuildRequires:	perl-Email-MIME-Encodings >= 1.3
 BuildRequires:	perl-Email-Simple >= 1:2.004
 BuildRequires:	perl-MIME-Types >= 1.13
 %endif
+Obsoletes:	perl-Email-MIME-Creator
+Obsoletes:	perl-Email-MIME-Modifier
 Requires:	perl-Email-Simple >= 1:2.004
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
