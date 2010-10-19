@@ -9,7 +9,7 @@ Summary:	Email::MIME - easy MIME message parsing
 Summary(pl.UTF-8):	Email::MIME - łatwe analizowanie wiadomości w formacie MIME
 Name:		perl-Email-MIME
 Version:	1.902
-Release:	1
+Release:	2
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Email/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -18,15 +18,17 @@ URL:		http://search.cpan.org/dist/Email-MIME/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Email-MessageID
 BuildRequires:	perl-Email-MIME-ContentType >= 1.011
 BuildRequires:	perl-Email-MIME-Encodings >= 1.3
+BuildRequires:	perl-Email-MessageID
 BuildRequires:	perl-Email-Simple >= 1:2.004
 BuildRequires:	perl-MIME-Types >= 1.13
 %endif
+Requires:	perl-Email-Simple >= 1:2.004
+Provides:	perl-Email-MIME-Creator
+Provides:	perl-Email-MIME-Modifier
 Obsoletes:	perl-Email-MIME-Creator
 Obsoletes:	perl-Email-MIME-Modifier
-Requires:	perl-Email-Simple >= 1:2.004
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
