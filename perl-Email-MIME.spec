@@ -18,6 +18,7 @@ URL:		http://search.cpan.org/dist/Email-MIME/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl-Email-MessageID
 BuildRequires:	perl-Email-MIME-ContentType >= 1.011
 BuildRequires:	perl-Email-MIME-Encodings >= 1.3
 BuildRequires:	perl-Email-Simple >= 1:2.004
